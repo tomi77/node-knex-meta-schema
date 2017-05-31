@@ -5,7 +5,7 @@ map = require 'lodash/map'
 isString = require 'lodash/isString'
 
 module.exports = (knex, currentDir) ->
-  (schemasFileName) ->
+  load: (schemasFileName) ->
     unless path.isAbsolute schemasFileName
       schemasFileName = path.resolve currentDir, 'schemas', schemasFileName
 
@@ -45,4 +45,3 @@ module.exports = (knex, currentDir) ->
               .references colDefinition.foreign
 
           return
-      return
