@@ -1,0 +1,35 @@
+{
+  "name": "knex-schema-loader",
+  "version": "0.1.0",
+  "description": "Knex schema loader",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "coffee -o . -bc src/index.coffee",
+    "lint": "coffeelint src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomi77/node-knex-schema-loader.git"
+  },
+  "keywords": [
+    "knex",
+    "schema",
+    "loader"
+  ],
+  "author": "Tomasz Jakub Rup",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomi77/node-knex-schema-loader/issues"
+  },
+  "homepage": "https://github.com/tomi77/node-knex-schema-loader#README.md",
+  "dependencies": {
+    "jsonfile": "^3.0.0",
+    "lodash": "^4.17.4",
+    "yamljs": "^0.2.10"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.12.6",
+    "coffeelint": "^1.16.0"
+  }
+}
