@@ -1,2 +1,3 @@
-# node-knex-schema-loader
-Knex schema loader
+# node-knex-meta-schema
+
+Knex meta schema builder

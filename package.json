@@ -1,7 +1,7 @@
 {
-  "name": "knex-schema-loader",
+  "name": "knex-meta-schema",
   "version": "0.1.0",
-  "description": "Knex schema loader",
+  "description": "Knex meta schema builder",
   "main": "index.js",
   "scripts": {
     "prepublish": "coffee -o . -bc src/index.coffee",
@@ -10,19 +10,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tomi77/node-knex-schema-loader.git"
+    "url": "git+https://github.com/tomi77/node-knex-meta-schema.git"
   },
   "keywords": [
     "knex",
     "schema",
-    "loader"
+    "meta"
   ],
   "author": "Tomasz Jakub Rup",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tomi77/node-knex-schema-loader/issues"
+    "url": "https://github.com/tomi77/node-knex-meta-schema/issues"
   },
-  "homepage": "https://github.com/tomi77/node-knex-schema-loader#README.md",
+  "homepage": "https://github.com/tomi77/node-knex-meta-schema#README.md",
   "dependencies": {
     "jsonfile": "^3.0.0",
     "lodash": "^4.17.4",
