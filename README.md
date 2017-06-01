@@ -36,10 +36,12 @@ knex = require('knex')
     filename: ':memory:'
   useNullAsDefault: yes
 
-metaSchema = require('knex-meta-schema') knex, __dirname
+MetaSchema = require('./knex-meta-schema')
+metaSchema = new MetaSchema knex, __dirname
 
-schemas = metaSchema.load 'test.yml'
-before schema for schema in schemas
+metaSchema.load 'test.yml'
+
+before metaSchema.create
 ~~~
 
 ## Supported types
